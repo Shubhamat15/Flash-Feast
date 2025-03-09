@@ -1,0 +1,296 @@
+:root {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: #333;
+    background-color: #f8f9fa;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  footer a {
+	text-decoration: none;
+}
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Main title styling */
+  .main-title {
+    font-weight: 700;
+    color: #ff6b35;
+    letter-spacing: 0.5px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Custom styles for the food cart page */
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  .card-header {
+    border-radius: 15px 15px 0 0 !important;
+    border-bottom: none;
+    background-color: #ff6b35 !important;
+  }
+  
+  .cart-card, .bill-card {
+    height: 100%;
+  }
+  
+  /* Cart item styling */
+  .cart-item {
+    transition: background-color 0.2s ease;
+    padding: 15px 0;
+    border-radius: 8px;
+  }
+  
+  .cart-item:hover {
+    background-color: rgba(255, 107, 53, 0.03);
+  }
+  
+  .product-name {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #ff6b35;
+  }
+  
+  .category-label, .feature-label {
+    font-weight: 500;
+    color: #6c757d;
+  }
+  
+  /* Quantity control styling */
+  .quantity-control {
+    justify-content: center;
+  }
+  
+  .quantity-input {
+    width: 60px !important;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+  
+  /* Price styling */
+  .price {
+    font-weight: 600;
+    color: #198754;
+  }
+  
+  /* Action buttons */
+  .action-buttons {
+    margin-top: 1.5rem;
+  }
+  
+  .btn {
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-primary {
+    color: #ff6b35;
+    border-color: #ff6b35;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #ff6b35;
+    border-color: #ff6b35;
+  }
+  
+  .btn-outline-primary, 
+  .btn-outline-danger, 
+  .btn-outline-secondary {
+    border-width: 2px;
+  }
+  
+  .btn-outline-primary:hover, 
+  .btn-outline-danger:hover, 
+  .btn-outline-secondary:hover {
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  .btn-sm {
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .rounded-circle {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Bill details styling */
+  .bill-item {
+    padding: 8px 0;
+  }
+  
+  .bill-amount {
+    font-weight: 500;
+  }
+  
+  .total-section {
+    padding-top: 8px;
+  }
+  
+  .total-amount {
+    color: #198754;
+  }
+  
+  /* Delivery options */
+  .delivery-options {
+    background-color: rgba(255, 107, 53, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .form-check-input:checked {
+    background-color: #ff6b35;
+    border-color: #ff6b35;
+  }
+  
+  /* Coupon section */
+  .coupon-section {
+    background-color: rgba(255, 107, 53, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  /* Checkout button */
+  .checkout-btn {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+    background-color: #ff6b35;
+    border-color: #ff6b35;
+    box-shadow: 0 4px 10px rgba(255, 107, 53, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #e85a2a;
+    border-color: #e85a2a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 107, 53, 0.3);
+  }
+  
+  /* Dark mode adjustments */
+  @media (prefers-color-scheme: feSpotLight) {
+    :root {
+      color: #f8f9fa;
+      background-color: #212529;
+    }
+    
+    body {
+      background-color: #212529;
+      color: #f8f9fa;
+    }
+    
+    .main-title {
+      color: #ff8c61;
+    }
+    
+    .card {
+      background-color: #2c3034;
+      color: #f8f9fa;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-header {
+      background-color: #e85a2a !important;
+    }
+    
+    .cart-item:hover {
+      background-color: rgba(255, 140, 97, 0.05);
+    }
+    
+    .product-name {
+      color: #ff8c61;
+    }
+    
+    .text-muted {
+      color: #adb5bd !important;
+    }
+    
+    .price {
+      color: #75b798;
+    }
+    
+    .total-amount {
+      color: #75b798;
+    }
+    
+    .form-control {
+      background-color: #343a40;
+      border-color: #495057;
+      color: #f8f9fa;
+    }
+    
+    .form-control::placeholder {
+      color: #6c757d;
+    }
+    
+    .delivery-options,
+    .coupon-section {
+      background-color: rgba(255, 140, 97, 0.05);
+    }
+    
+    .btn-outline-secondary {
+      color: #adb5bd;
+      border-color: #495057;
+    }
+    
+    .btn-outline-primary {
+      color: #ff8c61;
+      border-color: #ff6b35;
+    }
+    
+    .btn-outline-primary:hover {
+      background-color: #e85a2a;
+      border-color: #e85a2a;
+    }
+    
+    .btn-outline-danger {
+      color: #ea868f;
+      border-color: #dc3545;
+    }
+    
+    .checkout-btn {
+      background-color: #e85a2a;
+      border-color: #e85a2a;
+      box-shadow: 0 4px 10px rgba(255, 107, 53, 0.3);
+    }
+    
+    .checkout-btn:hover {
+      background-color: #d04d20;
+      border-color: #d04d20;
+    }
+    
+    .form-check-input:checked {
+      background-color: #e85a2a;
+      border-color: #e85a2a;
+    }
+  }

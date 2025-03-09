@@ -1,0 +1,218 @@
+.card {
+    transition: transform 0.3s ease, box-shadow 0.5s ease-in-out, filter 0.3s ease; /* Smooth transitions for all properties */
+}
+
+.card:hover {
+    /* Retain your original box-shadow */
+    box-shadow: rgba(255, 172, 28, 0.199) -10px 10px, rgba(255, 172, 28, 0.19) -20px 20px;
+
+    /* Slight lift effect */
+    transform: translateY(-5px); /* Subtle upward movement */
+    
+    /* Subtle brightness increase */
+    filter: brightness(1.05); /* Slight brightness boost */
+}
+
+@import url('https://fonts.cdnfonts.com/css/samsung-sharp-sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+.heading{
+  font-family: 'Samsung Sharp Sans', sans-serif;
+  text-align: center;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.heading{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.container_popular {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:100%;
+}
+
+.cardsss {
+    width: 80%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: 820px;
+}
+
+.cards--1 .cards__img, .cards--1 .cards__img--hover {
+    background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.cards--2 .cards__img, .cards--2 .cards__img--hover {
+    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.cards__like {
+    width: 18px;
+}
+
+.cards__clock {
+    width: 15px;
+  vertical-align: middle;
+    fill: #AD7D52;
+}
+.cards__time {
+    font-size: 12px;
+    color: #AD7D52;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.cards__clock-info {
+    float: right;
+}
+
+.cards__img {
+  visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+  
+}
+
+.cards__info-hover {
+    position: absolute;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.cards__img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  position: absolute;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+  
+}
+.cards {
+  margin-right: 25px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+    width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.cards:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.cards__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.cards__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  color: #868686;
+}
+
+.cards__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.cards__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.cards__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+.cards:hover .cards__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.cards:hover .cards__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.cards:hover .cards__info-hover {
+    opacity: 1;
+}
+
+.karna {
+    width: 100%; /* Makes the image stretch across the card */
+    height: 200px; /* Fixes height to keep all images the same size */
+    object-fit: cover; /* Ensures images are cropped to fit without distortion */
+    object-position: center; /* Centers images within the fixed size */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card {
+    width: 100%; /* Ensures uniform card width */
+    max-width: 400px; /* Set a max width */
+    height: 340px; /* Fixes card height */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1; /* Ensures content fills the space properly */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+
+
+
+
+
+
+
