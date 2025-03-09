@@ -143,7 +143,7 @@ text-decoration: none;
 		<div class="container-fluid">
 		
 		<nav class="navbar bg-body-tertiary" style="padding: 0px; margin: 0px;">
-    <a class="navbar-brand" href="#" style="padding: 0px; margin: 0px;">
+    <a class="navbar-brand" href="/Tap_foods/Resturant" style="padding: 0px; margin: 0px;">
       <img src="ImageResturant/logo2.png" alt="Bootstrap" width="70" height="60" >
     </a>
 </nav>
@@ -159,12 +159,12 @@ text-decoration: none;
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item"><a class="nav-link active"
-						aria-current="page" href="#">Home</a></li>
+						aria-current="page" href="/Tap_foods/Resturant">Home</a></li>
 					
-					<li class="nav-item"><a class="nav-link" href="#">Restaurants</a>
+					<li class="nav-item"><a class="nav-link" href="/Tap_foods/Resturant#main">Restaurants</a>
 					</li>
 					
-					<li class="nav-item"><a class="nav-link" href="#">Specials</a>
+					<li class="nav-item"><a class="nav-link" href="/Tap_foods/Resturant#pop">Specials</a>
 					</li>
 					
 					<li class="nav-item dropdown"><a
@@ -187,7 +187,7 @@ text-decoration: none;
 					<button class="btn btn-outline-success" type="submit">Search</button>
 				</form>
 				<div class="d-flex align-items-center ">
-					<a href="#" class="me-3 text-dark"><i
+					<a href="Login.jsp" class="me-3 text-dark"><i
 						class="fa-solid fa-user fa-lg"></i></a> <a href="#"
 						class="text-dark position-relative"> <i
 						class="fa-solid fa-cart-shopping fa-lg"></i> <span

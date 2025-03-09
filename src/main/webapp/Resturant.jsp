@@ -137,7 +137,7 @@ body{
 		<div class="container-fluid">
 		
 		<nav class="navbar bg-body-tertiary" style="padding: 0px; margin: 0px;">
-    <a class="navbar-brand" href="#" style="padding: 0px; margin: 0px;">
+    <a class="navbar-brand" href="/Tap_foods/Resturant" style="padding: 0px; margin: 0px;">
       <img src="ImageResturant/logo2.png" alt="Bootstrap" width="70" height="60" >
     </a>
 </nav>

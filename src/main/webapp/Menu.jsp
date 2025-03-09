@@ -139,7 +139,7 @@ body{
 		<div class="container-fluid">
 		
 		<nav class="navbar bg-body-tertiary" style="padding: 0px; margin: 0px;">
-    <a class="navbar-brand" href="#" style="padding: 0px; margin: 0px;">
+    <a class="navbar-brand" href="Resturant" style="padding: 0px; margin: 0px;">
       <img src="ImageResturant/logo2.png" alt="Bootstrap" width="70" height="60" >
     </a>
 </nav>
@@ -152,13 +152,14 @@ body{
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link active"
-						aria-current="page" href="#">Home</a></li>
+					<li class="nav-item">
+            <a class="nav-link active"
+						aria-current="page" href="Resturant">Home</a></li>
 					
 						<li class="nav-item"><a class="nav-link" href="#">Restaurants</a>
 					</li>
 					
-					<li class="nav-item"><a class="nav-link" href="#">Specials</a>
+					<li class="nav-item"><a class="nav-link" href="/Tap_foods/Resturant#pop">Specials</a>
 					</li>
 					
 				     <li class="nav-item dropdown"><a
@@ -182,7 +183,8 @@ body{
 				</form>
 				<div class="d-flex align-items-center">
 					<a href="Login.jsp" class="me-3 text-dark"><i
-						class="fa-solid fa-user fa-lg"></i></a> <a href="" class="text-dark"><i
+						class="fa-solid fa-user fa-lg"></i></a> 
+            <a href="Cart.jsp" class="text-dark"><i
 						class="fa-solid fa-cart-shopping fa-lg"></i> <span
 						class="position-absolute top-2 end-1 translate-middle badge rounded-pill bg-danger px-2 py-1"
 						style="font-size: 10px; transform: translate(50%, -50%);">
