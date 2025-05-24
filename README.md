@@ -30,10 +30,6 @@ Set up the MySQL database and import the required tables.
 Configure the database connection in DBConnection.java.
 Run the server and open the website in the browser.
 
-🔗 Live Demo  
-If hosted, provide the link:
-FlashFeast Live Demo
-
 📩 Contact & Contribution
 Want to improve FlashFeast? Feel free to contribute!
 📧 Email: hello.vshubham@gmail.com
